@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+
+.top-container {
+  background-image: url('./images/desktop/image-header.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar ul li {
+  list-style: none;
+  padding: 1rem;
+  /* margin-left: 1rem; */
+  color: white;
+  font-family: 'Barlow', sans-serif;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+.contact {
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: hsl(210, 5%, 52%);
+  border-radius: 25px;
+}
+
+.company-name {
+  color: white;
+  font-size: 30px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+}
+
+.moto {
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 1; */
+  align-items: center;
+  margin-top: 5rem;
+}
+.moto h1 {
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 69px;
+  text-align: center;
+  letter-spacing: 8.75px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.moto img {
+  margin-top: 5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.image-box img {
+  height: 100%;
+  width: 100%;
+}
+
+.text-box {
+  width: 63%;
+  margin: 30% auto;
+}
+
+.text-box h1 {
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 49px;
+  letter-spacing: -0.285714px;
+  color: #24303e;
+}
+
+.text-box p {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: -0.128571px;
+  color: #808397;
+  margin: 2rem 0;
+}
+.text-box span {
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #24303e;
+  border-bottom: 4px solid #fad400;
+
+  cursor: pointer;
+}
+.text-box span:hover {
+  border-bottom: 4px solid yellow;
+}
+
+.cherry {
+  background-image: url('./images/desktop/image-graphic-design.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+
+.orange {
+  background-image: url('./images/desktop/image-photography.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  position: relative;
+}
+
+.text-box2 {
+  width: 55%;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 23%;
+}
+
+.text-box2 h3 {
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  letter-spacing: -0.2px;
+  color: #052c3b;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+.text-box2 p {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  letter-spacing: -0.114286px;
+  color: #19536c;
+  margin-top: 1.5rem;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+}
+
+.clinets {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+}
+.testimonials h1 {
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 5px;
+  color: #a7aaad;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.clinet {
+  width: 30%;
+  text-align: center;
+}
+
+.clinet img {
+  width: 72px;
+  border-radius: 50%;
+}
+
+.clinet p {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #5b636d;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  padding: 0 1rem;
+}
+
+.clinet h4 {
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: -0.128571px;
+  color: #24303e;
+}
+.clinet span {
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.1px;
+  color: #a7aaad;
+}
+
+.pictures-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.picture-div img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background: #90d4c6;
+}
+
+.title {
+  font-family: Fraunces 9pt Soft;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 22px;
+  text-align: center;
+  color: #2c7566;
+  margin-top: 3rem;
+}
+
+.menu {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.menu span {
+  padding: 2rem;
+  font-family: Barlow;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: -0.128571px;
+  color: #458d7e;
+  cursor: pointer;
+}
+
+.social {
+  margin-bottom: 2rem;
+}
+.social img {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-bar ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .egg {
+    grid-row-start: -1;
+  }
+  .text-box {
+    margin: 15% auto;
+    text-align: center;
+    width: 70%;
+  }
+
+  .clinets {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+  }
+  .clinet {
+    width: 80%;
+    margin-top: 1rem;
+  }
+  .pictures-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .moto {
+    margin-top: 3rem;
+  }
+  .moto h1 {
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 8.75px;
+  }
+
+  .moto img {
+    margin-top: 2rem;
+  }
+
+  .menu span {
+    padding: 1.5rem;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+
